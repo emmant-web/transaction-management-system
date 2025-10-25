@@ -13,5 +13,3 @@ Transaction Date,Account Number,Account Holder Name,Amount,Status
 2025-03-10,4646-8282-1919,Amanda Robinson,300.50,Settled
 2025-10-27,1234-1234-1234,John Doe,100.34,Pending
 2025-10-27,1234-1234-1234,Landers Market,687.00,Settled
-2025-10-28,1111-1111-1111,Sr Market,3524.00,Settled
-2025-10-28,1111-1111-1111,landers market,1245.00,Failed
