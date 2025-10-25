@@ -73,7 +73,7 @@ Before setting up the project, ensure the following software is installed:
 
 ```bash
 git clone https://github.com/emmant-web/transaction-management-system.git
-cd <project-folder>
+cd transaction-management-system
 ```
 
 ### 2. Backend Setup
