@@ -33,7 +33,7 @@ function TransactionsPage() {
 
   return (
     <div className="p-6">
-      <div className="flex justify-between mb-4">
+      <div className="flex justify-between mx-auto mb-4 max-w-7xl">
 
         <div>
           <h1 className="text-3xl font-bold">

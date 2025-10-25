@@ -28,7 +28,7 @@ function AddTransactionModal({ isOpen, onClose, onAdd }) {
 
   return (
     <div className="fixed inset-0 bg-black/20 backdrop-blur-sm flex justify-center items-center">
-      <div className="bg-white p-6 rounded-xl shadow-lg w-96">
+      <div className="bg-white p-6 rounded-xl shadow-lg w-2xl">
         <h2 className="text-xl font-bold">Add Transaction</h2>
         <p className="text-gray-400 mb-4">Please fill in your details</p>
 
