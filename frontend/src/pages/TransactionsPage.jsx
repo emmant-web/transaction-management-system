@@ -33,16 +33,18 @@ function TransactionsPage() {
 
   return (
     <div className="p-6">
-      <div className="flex justify-between mx-auto mb-4 max-w-7xl">
 
-        <div>
+      <div className="md:flex justify-between mx-auto mb-4 md:max-w-7xl">
+
+        <div className="mb-4 text-center md:text-start">
           <h1 className="text-3xl font-bold">
           Transaction Management System
         </h1>
         <p className="text-gray-400">Overview of transactions</p>
         </div>
         
-        <button
+        <div className="flex justify-center">
+           <button
           onClick={() => setIsModalOpen(true)}
           className="text-white px-4 py-2 rounded-full flex justify-center items-center gap-2 mb-4 bg-[#8370FE]"
         >
@@ -62,6 +64,9 @@ function TransactionsPage() {
           </svg>
           Add Transaction
         </button>
+        </div>
+       
+
       </div>
 
       <TransactionTable transactions={transactions} />

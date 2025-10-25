@@ -28,7 +28,7 @@ function AddTransactionModal({ isOpen, onClose, onAdd }) {
 
   return (
     <div className="fixed inset-0 bg-black/20 backdrop-blur-sm flex justify-center items-center">
-      <div className="bg-white p-6 rounded-xl shadow-lg w-2xl">
+      <div className="bg-white p-6 rounded-2xl shadow-lg w-xs md:w-2xl">
         <h2 className="text-xl font-bold">Add Transaction</h2>
         <p className="text-gray-400 mb-4">Please fill in your details</p>
 
@@ -38,7 +38,7 @@ function AddTransactionModal({ isOpen, onClose, onAdd }) {
             name="transaction_date"
             value={form.transaction_date}
             onChange={handleChange}
-            className="border border-gray-300 px-4 py-2 w-full rounded-full"
+            className="border border-gray-300 px-3 py-2 md:px-4 md:py-4 w-full rounded-full"
             required
           />
           <input
@@ -47,7 +47,7 @@ function AddTransactionModal({ isOpen, onClose, onAdd }) {
             placeholder="1234-1234-1234"
             value={form.account_number}
             onChange={handleChange}
-            className="border border-gray-300 px-4 py-2 w-full rounded-full outline-none"
+            className="border border-gray-300 px-3 py-2 md:px-4 md:py-4 w-full rounded-full outline-none"
             pattern="\d{4}-\d{4}-\d{4}"
             title="Enter account number in format 1234-1234-1234"
             required
@@ -58,7 +58,7 @@ function AddTransactionModal({ isOpen, onClose, onAdd }) {
             placeholder="Account Holder Name"
             value={form.account_holder_name}
             onChange={handleChange}
-            className="border border-gray-300 px-4 py-2 w-full rounded-full"
+            className="border border-gray-300 px-3 py-2 md:px-4 md:py-4 w-full rounded-full"
             required
           />
           <input
@@ -73,7 +73,7 @@ function AddTransactionModal({ isOpen, onClose, onAdd }) {
                 setform({ ...form, amount: value.toFixed(2) });
               }
             }}
-            className="border border-gray-300 px-4 py-2 w-full rounded-full"
+            className="border border-gray-300 px-3 py-2 md:px-4 md:py-4 w-full rounded-full"
             required
           />
 
@@ -81,13 +81,13 @@ function AddTransactionModal({ isOpen, onClose, onAdd }) {
             <button
               type="button"
               onClick={onClose}
-              className="px-4 py-2 bg-gray-200 hover:bg-gray-400 rounded-full"
+              className="px-5 py-2 md:px-7 md:py-4 bg-gray-200 hover:bg-gray-400 rounded-full"
             >
               Cancel
             </button>
             <button
               type="submit"
-              className="px-4 py-2 bg-[#8370FE] text-white rounded-full hover:bg-[#594BAF]"
+              className="px-5 py-2 md:px-7 md:py-4 bg-[#8370FE] text-white rounded-full hover:bg-[#594BAF]"
             >
               Add
             </button>
