@@ -79,6 +79,8 @@ cd transaction-management-system
 ### 2. Backend Setup
 
 ```bash
+# do this with Ubuntu 22.04.5 LTS (WSL)
+
 cd backend
 bundle install
 rails s
@@ -101,6 +103,8 @@ backend/db/transactions.csv
 ### 3. Frontend Setup
 
 ```bash
+# do this with Ubuntu 22.04.5 LTS (WSL)
+
 cd frontend
 npm install
 npm run dev
