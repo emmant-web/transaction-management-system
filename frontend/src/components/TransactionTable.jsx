@@ -1,6 +1,6 @@
 function TransactionTable({ transactions }) {
   return (
-    <div className="w-full max-w-5xl mx-auto">
+    <div className="w-full max-w-7xl mx-auto">
       {/* ===== Table Header ===== */}
       <div className="overflow-hidden rounded-t-2xl border border-gray-200">
         <table className="min-w-full border-separate border-spacing-0 table-fixed">
@@ -8,7 +8,7 @@ function TransactionTable({ transactions }) {
             <col className="w-[15%]" /> {/* Date */}
             <col className="w-[25%]" /> {/* Account Number */}
             <col className="w-[25%]" /> {/* Account Holder */}
-            <col className="w-[15%]" /> {/* Amount */}
+            <col className="w-[25%]" /> {/* Amount */}
             <col className="w-[15%]" /> {/* Status */}
           </colgroup>
 
@@ -37,7 +37,7 @@ function TransactionTable({ transactions }) {
             <col className="w-[15%]" />
             <col className="w-[25%]" />
             <col className="w-[25%]" />
-            <col className="w-[15%]" />
+            <col className="w-[25%]" />
             <col className="w-[15%]" />
           </colgroup>
 
