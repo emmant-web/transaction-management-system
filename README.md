@@ -39,7 +39,7 @@ root/
 ├── backend/              # Rails API (CSV-based)
 │   ├── app/
 │   ├── config/
-│   ├── db/
+│   ├── data/ # Contains transactions.csv
 │   └── ...
 ├── frontend/             # React + Vite + Tailwind frontend
 │   ├── src/
@@ -64,6 +64,13 @@ Before setting up the project, ensure the following software is installed:
 | Rails    | 7.2.2.2                                  | Backend API framework                     |
 | OS       | Windows 11 with Ubuntu 22.04.5 LTS (WSL) | Development environment                   |
 | Database | CSV file                                 | Stores transaction data                   |
+
+
+### 🧪 Optional Tool
+
+| Tool     | Purpose |
+| -------- | -------- |
+| Postman  | Used for testing API endpoints (GET and POST requests) |
 
 ---
 
