@@ -32,6 +32,18 @@ It allows users to **view and add transactions**, with all data stored in a **CS
 
 ---
 
+### 📝 Add Transaction Modal Fields
+
+The modal form includes the following inputs:
+- **Transaction Date** (date input)
+- **Account Number** (text input)
+- **Account Holder Name** (text input)
+- **Amount** (number input)
+
+A random **Status** (Pending, Settled, or Failed) is automatically assigned when adding a new transaction.
+
+--
+
 ## 🗂️ Project Structure
 
 ```
@@ -287,6 +299,8 @@ Check `backend/db/transactions.csv` to ensure new entries are appended.
 - ✓ React frontend dynamically updates the table
 - ✓ API responses match expected JSON
 - ✓ No CORS or network errors occur
+- ✓ Each newly added transaction is automatically assigned one of three statuses: **Pending**, **Settled**, or **Failed**.
+
 
 ---
 
@@ -297,6 +311,17 @@ Check `backend/db/transactions.csv` to ensure new entries are appended.
 - Account numbers follow XXXX-XXXX-XXXX format
 
 ---
+
+## 🎨 Status Color Legend
+
+| Status  | Color  |
+|----------|--------|
+| Pending  | 🟡 Yellow |
+| Settled  | 🟢 Green  |
+| Failed   | 🔴 Red    |
+
+---
+
 
 ## 👨‍💻 Created By
 - Emmanuel Toribio
