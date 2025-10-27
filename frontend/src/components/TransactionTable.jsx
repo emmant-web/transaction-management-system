@@ -3,45 +3,35 @@ function TransactionTable({ transactions }) {
     <div className="w-full max-w-7xl mx-auto">
       {/* ===== DESKTOP / LAPTOP TABLE ===== */}
       <div className="hidden md:block">
-        {/* ===== Table Header ===== */}
-        <div className="overflow-hidden rounded-t-2xl border border-gray-200">
+        <div className="overflow-hidden rounded-2xl border border-gray-200">
           <table className="min-w-full border-separate border-spacing-0 table-fixed">
             <colgroup>
-              <col className="w-[15%]" /> {/* Date */}
-              <col className="w-[25%]" /> {/* Account Number */}
+              <col className="w-[20%]" /> {/* Transaction Date */}
+              <col className="w-[20%]" /> {/* Account Number */}
               <col className="w-[25%]" /> {/* Account Holder */}
-              <col className="w-[25%]" /> {/* Amount */}
+              <col className="w-[20%]" /> {/* Amount */}
               <col className="w-[15%]" /> {/* Status */}
             </colgroup>
 
             <thead className="bg-[#F6F4FF]">
               <tr>
-                <th className="p-4 text-left uppercase text-[#8370FE]">Date</th>
+                <th className="p-4 text-left uppercase text-[#8370FE]">
+                  Transaction Date
+                </th>
                 <th className="p-4 text-left uppercase text-[#8370FE]">
                   Account Number
                 </th>
                 <th className="p-4 text-right uppercase text-[#8370FE]">
                   Account Holder
                 </th>
-                <th className="p-4 text-left uppercase text-[#8370FE]">Amount</th>
+                <th className="p-4 text-left uppercase text-[#8370FE]">
+                  Amount
+                </th>
                 <th className="p-4 text-left uppercase text-[#8370FE]">
                   Status
                 </th>
               </tr>
             </thead>
-          </table>
-        </div>
-
-        {/* ===== Table Body ===== */}
-        <div className="overflow-hidden rounded-b-2xl border border-gray-200 border-t-0">
-          <table className="min-w-full border-separate border-spacing-0 table-fixed">
-            <colgroup>
-              <col className="w-[15%]" />
-              <col className="w-[25%]" />
-              <col className="w-[25%]" />
-              <col className="w-[25%]" />
-              <col className="w-[15%]" />
-            </colgroup>
 
             <tbody className="bg-white">
               {transactions.map((t, index) => (
@@ -94,7 +84,7 @@ function TransactionTable({ transactions }) {
   );
 }
 
-/* ===== STATUS BADGE COMPONENT ===== */
+/* ===== STATUS BADGE COMPONENT (your original styling kept) ===== */
 function StatusBadge({ status }) {
   const color =
     status === "Pending"
