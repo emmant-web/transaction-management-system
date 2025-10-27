@@ -42,7 +42,7 @@ The modal form includes the following inputs:
 
 A random **Status** (Pending, Settled, or Failed) is automatically assigned when adding a new transaction.
 
---
+---
 
 ## 🗂️ Project Structure
 
