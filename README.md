@@ -293,7 +293,6 @@ Check `backend/db/transactions.csv` to ensure new entries are appended.
 ## 🧑‍💻 Developer Notes
 
 - All transactions are stored in CSV format (no database required)
-- Status field defaults to "Pending" for new transactions
 - Transaction dates should follow YYYY-MM-DD format
 - Account numbers follow XXXX-XXXX-XXXX format
 
